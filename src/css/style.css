@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 450px;
+  height: 500px;
+  background-color: #111111;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+  box-shadow: 0px 0px 19px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+
+.container-select-currencies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.select-currency {
+  padding: 5px 10px;
+  border: 1px solid rgba(3, 3, 3, 0.13);
+  max-height: 100px;
+  appearance: none;
+  min-width: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #fafafa;
+  outline: none;
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form > div {
+  display: flex;
+}
+
+.form div label {
+  font-size: 18px;
+}
+
+.form div input {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  outline: none;
+}
+
+.converted {
+  cursor: not-allowed;
+}
+
+.btn-converter {
+  margin-top: 30px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.btn-converter:hover {
+  background-color: #ffffff;
+  color: #000000;
+}

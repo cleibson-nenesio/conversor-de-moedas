@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="form">
+        <h1>Conversor de Moedas</h1>
+
+        <div>
+          <select
+            name="select-old-currency"
+            class="select-currency"
+            id="select-actual-currency"
+          ></select>
+          <input
+            type="number"
+            id="amount"
+            name="amount-to-convert"
+            placeholder="Quantia atual"
+          />
+        </div>
+
+        <div>
+          <select
+            name="select-new-currency"
+            class="select-currency"
+            id="select-new-currency"
+          ></select>
+          <input
+            type="number"
+            id="new-amount"
+            class="converted"
+            name="new-amount"
+            placeholder="Nova quantia"
+            readonly
+          />
+        </div>
+
+        <input type="submit" value="Converter" class="btn-converter" />
+      </form>
+    </div>
+
+    <script src="./src/js/script.js" type="module"></script>
+  </body>
+</html>
